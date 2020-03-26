@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>elara-project</artifactId>
+        <groupId>com.bbva.elara</groupId>
+        <version>5.12.0</version>
+    </parent>
+
+	<artifactId>UF_contratacion_digital_QTDI</artifactId>
+	<groupId>com.bbva.qtdi</groupId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+    <name>UF_contratacion_digital_QTDI</name>
+	<description>El sistema Carpeta Digital y Contratación Electrónica es una iniciativa que permite a los candidatos que aspiran a ser empleados del banco, registrar su información básica y subir documentos digitalizados en el gestor documental exigidos por el banco BBV</description>
+	
+    <properties>
+        <apx.core.online.version>5.12.0</apx.core.online.version>
+        <outputDirectoryDTOs>../../../target/dtos</outputDirectoryDTOs>
+        <outputDirectoryLibraries>../../../target/libraries</outputDirectoryLibraries>
+        <outputDirectoryTransactions>../../../target/transactions</outputDirectoryTransactions>
+        <jacoco.no.coverage>0.00</jacoco.no.coverage>
+        <jacoco.min.coverage>0.60</jacoco.min.coverage>
+        <jacoco.type.coverage>COMPLEXITY</jacoco.type.coverage>
+    </properties>
+
+    <modules>
+        <module>artifact/dtos</module>
+        <module>artifact/libraries</module>
+        <module>artifact/transactions</module>
+    </modules>
+
+</project>
