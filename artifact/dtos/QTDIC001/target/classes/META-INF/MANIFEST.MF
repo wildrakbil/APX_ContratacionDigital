@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1585351884668
+Build-Jdk: 1.8.0_91
+Built-By: CFP-6685
+Bundle-Category: dto
+Bundle-Description: DTO's to manage a hiring process for work applicants
+ .
+Bundle-ManifestVersion: 2
+Bundle-Name: QTDIC001
+Bundle-SymbolicName: QTDIC001-0.0.1
+Bundle-Version: 0.0.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.bbva.qtdi.dto.applicants;uses:="com.bbva.apx.dto";ve
+ rsion="0.0.1"
+Import-Package: com.bbva.apx.dto;version="[1.0,2)",org.apache.commons.la
+ ng3.builder;version="[3.2,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-4.0.0.201805111645
