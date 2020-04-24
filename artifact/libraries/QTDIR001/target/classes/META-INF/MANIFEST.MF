@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1587744523245
+Build-Jdk: 1.8.0_91
+Built-By: CFP-6685
+Bundle-Category: library-jdbc
+Bundle-Description: El sistema Carpeta Digital y Contratación Electrón
+ ica es una iniciativa que permite a los candidatos que aspiran a ser em
+ pleados del banco, registrar su información básica y subir documentos
+  digitalizados en el gestor documental exigidos por el banco BBV
+Bundle-ManifestVersion: 2
+Bundle-Name: QTDIR001
+Bundle-SymbolicName: QTDIR001-0.0.1
+Bundle-Version: 0.0.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.bbva.qtdi.lib.r001;version="0.0.1"
+Import-Package: org.osgi.framework;version="0.0";resolution:=optional,co
+ m.bbva.elara.aspect;version="0.0";resolution:=optional,spring;version="
+ 0.0";resolution:=optional,org.springframework.aop;version="0.0";resolut
+ ion:=optional,org.springframework.aop.framework;version="0.0";resolutio
+ n:=optional,org.aopalliance.aop;version="0.0";resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-4.0.0.201805111645

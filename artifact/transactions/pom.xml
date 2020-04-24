@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
-	<parent>
-		<artifactId>UF_contratacion_digital_QTDI</artifactId>
-		<groupId>com.bbva.qtdi</groupId>
-		<version>0.0.1</version>
-		<relativePath>../../</relativePath>
-	</parent>
-
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
     <groupId>com.bbva.qtdi</groupId>
-    <artifactId>TRANSACTIONS</artifactId>
+    <artifactId>UF_contratacion_digital_QTDI</artifactId>
     <version>0.0.1</version>
-    <packaging>pom</packaging>
-    <name>TRANSACTIONS</name>
-
-    <modules>
-    	
-    </modules>
-
+    <relativePath>../../</relativePath>
+  </parent>
+  <groupId>com.bbva.qtdi</groupId>
+  <artifactId>TRANSACTIONS</artifactId>
+  <version>0.0.1</version>
+  <packaging>pom</packaging>
+  <name>TRANSACTIONS</name>
+  <modules>
+    <module>QTDIT07101-ES</module>
+    <module>QTDIT07201-ES</module>
+    <module>QTDIT07301-ES</module>
+    <module>QTDIT07401-ES</module>
+    <module>QTDIT07501-ES</module>
+  </modules>
 </project>

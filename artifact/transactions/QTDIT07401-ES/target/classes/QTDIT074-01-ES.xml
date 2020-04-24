@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><transaction xmlns="http://www.w3schools.com" transactionName="QTDIT074" application="QTDI" version="01" country="ES" language="EN"><paramsIn><parameter order="1" name="applicant-id" type="Long" size="8" mandatory="1"/></paramsIn><paramsOut/><description>Delete Applicant by Id</description></transaction>
