@@ -7,7 +7,7 @@
 		<version>0.0.1</version>
 	</parent>
 	
-	<groupId>com.bbva.qtdi.dto.applicants</groupId>
+	<groupId>com.bbva.qtdi.employees.dto</groupId>
 	<artifactId>QTDIC001</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>

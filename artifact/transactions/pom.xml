@@ -14,16 +14,16 @@
   <packaging>pom</packaging>
   <name>TRANSACTIONS</name>
   <modules>
-    <module>QTDIT07101-ES</module>
-    <module>QTDIT07201-ES</module>
-    <module>QTDIT07301-ES</module>
-    <module>QTDIT07401-ES</module>
-    <module>QTDIT07501-ES</module>
-    <module>QTDIT07601-ES</module>
-    <module>QTDIT07701-ES</module>
-    <module>QTDIT07801-ES</module>
-    <module>QTDIT07901-ES</module>
-    <module>QTDIT08001-ES</module>
-    <module>QTDIT09001-ES</module>
+    <module>QTDIT07101-CO</module>
+    <module>QTDIT07201-CO</module>
+    <module>QTDIT07301-CO</module>
+    <module>QTDIT07401-CO</module>
+    <module>QTDIT07501-CO</module>
+    <module>QTDIT07601-CO</module>
+    <module>QTDIT07701-CO</module>
+    <module>QTDIT07801-CO</module>
+    <module>QTDIT07901-CO</module>
+    <module>QTDIT08001-CO</module>
+    <module>QTDIT09001-CO</module>
   </modules>
 </project>

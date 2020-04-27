@@ -16,5 +16,7 @@
   <modules>
     <module>QTDIR001</module>
     <module>QTDIR001IMPL</module>
+    <module>QTDIR002</module>
+    <module>QTDIR002IMPL</module>
   </modules>
 </project>

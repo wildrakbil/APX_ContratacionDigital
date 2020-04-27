@@ -5,18 +5,18 @@
     <parent>
         <artifactId>elara-project</artifactId>
         <groupId>com.bbva.elara</groupId>
-        <version>5.12.0</version>
+        <version>5.12.0-RELEASE</version>
     </parent>
 
 	<artifactId>UF_contratacion_digital_QTDI</artifactId>
-	<groupId>com.bbva.qtdi</groupId>
+	<groupId>com.bbva.qtdi.employees</groupId>
 	<version>0.0.1</version>
 	<packaging>pom</packaging>
     <name>UF_contratacion_digital_QTDI</name>
 	<description>El sistema Carpeta Digital y Contratación Electrónica es una iniciativa que permite a los candidatos que aspiran a ser empleados del banco, registrar su información básica y subir documentos digitalizados en el gestor documental exigidos por el banco BBV</description>
 	
     <properties>
-        <apx.core.online.version>5.12.0</apx.core.online.version>
+        <apx.core.online.version>5.12.0-RELEASE</apx.core.online.version>
         <outputDirectoryDTOs>../../../target/dtos</outputDirectoryDTOs>
         <outputDirectoryLibraries>../../../target/libraries</outputDirectoryLibraries>
         <outputDirectoryTransactions>../../../target/transactions</outputDirectoryTransactions>
