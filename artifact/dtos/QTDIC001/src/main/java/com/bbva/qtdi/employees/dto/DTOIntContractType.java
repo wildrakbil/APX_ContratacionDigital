@@ -5,58 +5,64 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 import com.bbva.apx.dto.AbstractDTO;
 
-public class DTOIntAuthorizationQuestion extends AbstractDTO {
+import java.io.File;
+import java.util.Objects;
+
+public class DTOIntContractType extends AbstractDTO {
 
 	private Long id;
 	private String description;
-	private String text;
+	private File attachment;
 	private boolean enabled;
-	
+
+
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getText() {
-		return text;
-	}
-	public void setText(String text) {
-		this.text = text;
-	}
+
+
+
 	public boolean isEnabled() {
 		return enabled;
 	}
+
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
+	}
+
+	public File getAttachment() {
+		return attachment;
+	}
+
+	public void setAttachment(File attachment) {
+		this.attachment = attachment;
 	}
 
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 		if (!super.equals(o)) return false;
-
-		DTOIntAuthorizationQuestion that = (DTOIntAuthorizationQuestion) o;
-
-		if (enabled != that.enabled) return false;
-		if (id != null ? !id.equals(that.id) : that.id != null) return false;
-		if (description != null ? !description.equals(that.description) : that.description != null) return false;
-		return text != null ? text.equals(that.text) : that.text == null;
+		DTOIntContractType that = (DTOIntContractType) o;
+		return enabled == that.enabled &&
+				id.equals(that.id) &&
+				description.equals(that.description) &&
+				attachment.equals(that.attachment);
 	}
 
 	@Override
 	public String toString() {
-		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-				.append("id", id)
-				.append("description", description)
-				.append("text", text)
-				.append("enabled", enabled)
-				.toString();
+		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("id", id).append("description", description).append("attachment", attachment).toString();
 	}
 }
