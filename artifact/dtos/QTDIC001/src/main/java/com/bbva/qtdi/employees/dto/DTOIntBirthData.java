@@ -1,4 +1,4 @@
-package com.bbva.qtdi.dto.applicants;
+package com.bbva.qtdi.employees.dto;
 
 import java.util.Date;
 

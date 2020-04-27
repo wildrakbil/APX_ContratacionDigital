@@ -1,16 +1,16 @@
-package com.bbva.qtdi.dto.applicants;
+package com.bbva.qtdi.employees.dto;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 import com.bbva.apx.dto.AbstractDTO;
 
-public class DTOIntCountry extends AbstractDTO {
+public class DTOIntIdentityDocumentType extends AbstractDTO {
 
-	private static final long serialVersionUID = 1931699728946641119L;
-
+	private static final long serialVersionUID = 1931699728946641126L;
 	private String id;
-	private String name;
+	private String description;
+
 
 	/**
 	 * @return the id
@@ -28,18 +28,18 @@ public class DTOIntCountry extends AbstractDTO {
 	}
 
 	/**
-	 * @return the name
+	 * @return the description
 	 */
-	public final String getName() {
-		return name;
+	public final String getDescription() {
+		return description;
 	}
 
 	/**
-	 * @param name
-	 *            the name to set
+	 * @param description
+	 *            the description to set
 	 */
-	public final void setName(String name) {
-		this.name = name;
+	public final void setDescription(String description) {
+		this.description = description;
 	}
 
 	/*
@@ -55,25 +55,24 @@ public class DTOIntCountry extends AbstractDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		DTOIntCountry other = (DTOIntCountry) obj;
+		DTOIntIdentityDocumentType other = (DTOIntIdentityDocumentType) obj;
+		if (description == null) {
+			if (other.description != null)
+				return false;
+		} else if (!description.equals(other.description))
+			return false;
 		if (id == null) {
 			if (other.id != null)
 				return false;
 		} else if (!id.equals(other.id))
-			return false;
-		if (name == null) {
-			if (other.name != null)
-				return false;
-		} else if (!name.equals(other.name))
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("id", id).append("name", name)
-				.toString();
-
+		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("id", id)
+				.append("description", description).toString();
 	}
 
 }

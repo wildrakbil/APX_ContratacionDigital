@@ -1,17 +1,17 @@
-package com.bbva.qtdi.dto.applicants;
+package com.bbva.qtdi.employees.dto;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 import com.bbva.apx.dto.AbstractDTO;
 
-public class DTOIntIdentityDocumentType extends AbstractDTO {
+public class DTOIntGender extends AbstractDTO {
 
-	private static final long serialVersionUID = 1931699728946641126L;
+	private static final long serialVersionUID = 1931699728946641123L;
+
 	private String id;
 	private String description;
-
-
+	
 	/**
 	 * @return the id
 	 */
@@ -55,7 +55,7 @@ public class DTOIntIdentityDocumentType extends AbstractDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		DTOIntIdentityDocumentType other = (DTOIntIdentityDocumentType) obj;
+		DTOIntGender other = (DTOIntGender) obj;
 		if (description == null) {
 			if (other.description != null)
 				return false;

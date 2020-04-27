@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.bbva.qtdi</groupId>
@@ -56,16 +58,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>com.bbva.qtdi</groupId>
+      <artifactId>QTDIR001</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+    <dependency>
       <groupId>com.bbva.qtdi.dto.applicants</groupId>
       <artifactId>QTDIC001</artifactId>
       <version>[0.0, )</version>
     </dependency>
-  <dependency>
-            <groupId>com.bbva.qtdi</groupId>
-            <artifactId>QTDIR001</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-    </dependencies>
+  </dependencies>
   <build>
     <pluginManagement>
       <plugins>
@@ -86,7 +88,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -117,9 +119,7 @@
             <Bundle-SymbolicName>${project.artifactId}-${project.version}</Bundle-SymbolicName>
             <Bundle-Activator>com.bbva.qtdi.QTDIT07901ESTransaction</Bundle-Activator>
             <Bundle-Category>transaction</Bundle-Category>
-            <Import-Package>com.bbva.elara.*;version="${arc.osgi.version}",
-							com.bbva.qtdi.dto.applicants,
-							*;version="${arc.osgi.version}"</Import-Package>
+            <Import-Package>com.bbva.elara.*;version="${arc.osgi.version}",com.bbva.qtdi.dto.applicants,*;version="${arc.osgi.version}"</Import-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -168,7 +168,7 @@
             </goals>
             <configuration>
               <tasks>
-                <copy file="./target/${project.artifactId}-${project.version}.jar" todir="${outputDirectoryTransactions}"/>
+                <copy file="./target/${project.artifactId}-${project.version}.jar" todir="${outputDirectoryTransactions}" />
               </tasks>
             </configuration>
           </execution>

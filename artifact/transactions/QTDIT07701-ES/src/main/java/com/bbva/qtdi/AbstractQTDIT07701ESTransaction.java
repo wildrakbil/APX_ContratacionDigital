@@ -1,9 +1,8 @@
 package com.bbva.qtdi;
 
-import com.bbva.qtdi.dto.applicants.DTOIntLanguageSkillLevel;
-import com.bbva.qtdi.dto.applicants.DTOIntLanguage;
-
 import com.bbva.elara.transaction.AbstractTransaction;
+import com.bbva.qtdi.employees.dto.DTOIntLanguage;
+import com.bbva.qtdi.employees.dto.DTOIntLanguageSkillLevel;
 
 public abstract class AbstractQTDIT07701ESTransaction extends AbstractTransaction {
 

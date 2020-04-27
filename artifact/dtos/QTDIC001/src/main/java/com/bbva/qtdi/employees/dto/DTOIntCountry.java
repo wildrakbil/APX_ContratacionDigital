@@ -1,24 +1,17 @@
-/**
- * 
- */
-package com.bbva.qtdi.dto.applicants;
+package com.bbva.qtdi.employees.dto;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 import com.bbva.apx.dto.AbstractDTO;
 
-/**
- * @author Novatec Solutions
- *
- */
-public class DTOIntLanguage extends AbstractDTO {
-	
-	private static final long serialVersionUID = 2931699728946641126L;
-	
+public class DTOIntCountry extends AbstractDTO {
+
+	private static final long serialVersionUID = 1931699728946641119L;
+
 	private String id;
-    private String name;
-	
+	private String name;
+
 	/**
 	 * @return the id
 	 */
@@ -27,7 +20,8 @@ public class DTOIntLanguage extends AbstractDTO {
 	}
 
 	/**
-	 * @param id the id to set
+	 * @param id
+	 *            the id to set
 	 */
 	public final void setId(String id) {
 		this.id = id;
@@ -41,13 +35,16 @@ public class DTOIntLanguage extends AbstractDTO {
 	}
 
 	/**
-	 * @param name the name to set
+	 * @param name
+	 *            the name to set
 	 */
 	public final void setName(String name) {
 		this.name = name;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -58,7 +55,7 @@ public class DTOIntLanguage extends AbstractDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		DTOIntLanguage other = (DTOIntLanguage) obj;
+		DTOIntCountry other = (DTOIntCountry) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -71,13 +68,12 @@ public class DTOIntLanguage extends AbstractDTO {
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public String toString() {
-		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-				.append("id", id)
-				.append("name", name)
+		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("id", id).append("name", name)
 				.toString();
+
 	}
-    
+
 }

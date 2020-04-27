@@ -1,4 +1,4 @@
-package com.bbva.qtdi.dto.applicants;
+package com.bbva.qtdi.employees.dto;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;

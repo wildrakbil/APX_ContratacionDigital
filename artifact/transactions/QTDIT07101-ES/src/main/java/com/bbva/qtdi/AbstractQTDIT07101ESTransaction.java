@@ -4,14 +4,14 @@ import java.util.Date;
 import java.util.List;
 
 import com.bbva.elara.transaction.AbstractTransaction;
-import com.bbva.qtdi.dto.applicants.DTOIntAddresses;
-import com.bbva.qtdi.dto.applicants.DTOIntApplicant;
-import com.bbva.qtdi.dto.applicants.DTOIntBirthData;
-import com.bbva.qtdi.dto.applicants.DTOIntContactDetails;
-import com.bbva.qtdi.dto.applicants.DTOIntGender;
-import com.bbva.qtdi.dto.applicants.DTOIntIdentityDocuments;
-import com.bbva.qtdi.dto.applicants.DTOIntMaritalStatus;
-import com.bbva.qtdi.dto.applicants.DTOIntSocialSecurity;
+import com.bbva.qtdi.employees.dto.DTOIntAddresses;
+import com.bbva.qtdi.employees.dto.DTOIntApplicant;
+import com.bbva.qtdi.employees.dto.DTOIntBirthData;
+import com.bbva.qtdi.employees.dto.DTOIntContactDetails;
+import com.bbva.qtdi.employees.dto.DTOIntGender;
+import com.bbva.qtdi.employees.dto.DTOIntIdentityDocuments;
+import com.bbva.qtdi.employees.dto.DTOIntMaritalStatus;
+import com.bbva.qtdi.employees.dto.DTOIntSocialSecurity;
 
 public abstract class AbstractQTDIT07101ESTransaction extends AbstractTransaction {
 

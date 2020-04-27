@@ -3,7 +3,7 @@ package com.bbva.qtdi;
 import java.util.List;
 
 import com.bbva.elara.transaction.AbstractTransaction;
-import com.bbva.qtdi.dto.applicants.DTOIntLanguageSkill;
+import com.bbva.qtdi.employees.dto.DTOIntLanguageSkill;
 
 public abstract class AbstractQTDIT07601ESTransaction extends AbstractTransaction {
 
