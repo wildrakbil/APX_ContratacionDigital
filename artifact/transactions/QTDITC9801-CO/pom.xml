@@ -62,6 +62,11 @@
       <artifactId>QTDIRC02</artifactId>
       <version>0.0.1</version>
     </dependency>
+    <dependency>
+      <groupId>com.bbva.qtdi.dto.employees</groupId>
+      <artifactId>QTDIC001</artifactId>
+      <version>[0.0, )</version>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -114,8 +119,7 @@
             <Bundle-SymbolicName>${project.artifactId}-${project.version}</Bundle-SymbolicName>
             <Bundle-Activator>com.bbva.qtdi.QTDITC9801COTransaction</Bundle-Activator>
             <Bundle-Category>transaction</Bundle-Category>
-            <Import-Package>com.bbva.elara.*;version="${arc.osgi.version}",
-							*;version="${arc.osgi.version}"</Import-Package>
+            <Import-Package>com.bbva.elara.*;version="${arc.osgi.version}",com.bbva.qtdi.dto.employees,*;version="${arc.osgi.version}"</Import-Package>
           </instructions>
         </configuration>
       </plugin>

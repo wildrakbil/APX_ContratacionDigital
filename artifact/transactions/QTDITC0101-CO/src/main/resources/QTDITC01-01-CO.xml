@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><transaction xmlns="http://www.w3schools.com" transactionName="QTDITC01" application="QTDI" version="01" country="CO" language="EN"><paramsIn/><paramsOut/><description>GET support-document-type</description></transaction>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="QTDITC01" application="QTDI" version="01" country="CO"
+             language="ES">
+    <paramsIn>
+        <parameter order="1" name="supportDocumentTypeId" type="Long" size="20" mandatory="1"/>
+    </paramsIn>
+    <paramsOut>
+        <parameter order="2" name="id" type="Long" size="20" mandatory="0"/>
+        <parameter order="3" name="description" type="String" size="200" mandatory="0"/>
+        <parameter order="4" name="required" type="Boolean" size="0" mandatory="0"/>
+        <parameter order="5" name="responsible" type="String" size="40" mandatory="0"/>
+        <dto name="externalReference" package="com.bbva.qtdi.dto.employees.DTOIntExternalReference"
+             artifactId="QTDIC001" mandatory="0" order="6">
+            <parameter order="7" name="id" type="String" size="20" mandatory="1"/>
+            <parameter order="8" name="name" type="String" size="100" mandatory="0"/>
+        </dto>
+        <dto name="category" package="com.bbva.qtdi.dto.employees.DTOIntCategory" artifactId="QTDIC001" mandatory="1"
+             order="9">
+            <parameter order="10" name="id" type="String" size="20" mandatory="1"/>
+            <parameter order="11" name="name" type="String" size="100" mandatory="0"/>
+        </dto>
+    </paramsOut>
+    <description>Retrieve the details of an specific support document.</description>
+</transaction>
