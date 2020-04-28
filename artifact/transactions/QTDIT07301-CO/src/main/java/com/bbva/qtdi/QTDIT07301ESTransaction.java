@@ -2,7 +2,7 @@
  * 
  */
 package com.bbva.qtdi;
-import com.bbva.qtdi.lib.r001.QTDIR001;
+import com.bbva.qtdi.lib.rc01.QTDIRC01;
 
 /**
  * Modify Applicants by Id
@@ -14,7 +14,7 @@ public class QTDIT07301ESTransaction extends AbstractQTDIT07301ESTransaction {
 
 	@Override
 	public void execute() {
-		QTDIR001 qtdiR001 = (QTDIR001)getServiceLibrary(QTDIR001.class);
+		QTDIRC01 qtdiRC01 = (QTDIRC01)getServiceLibrary(QTDIRC01.class);
 		// TODO
 	}
 

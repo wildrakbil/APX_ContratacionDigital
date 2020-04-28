@@ -55,9 +55,10 @@
       <artifactId>guava</artifactId>
       <scope>test</scope>
     </dependency>
-  <dependency>
+  
+    <dependency>
             <groupId>com.bbva.qtdi</groupId>
-            <artifactId>QTDIR001</artifactId>
+            <artifactId>QTDIRC01</artifactId>
             <version>0.0.1</version>
         </dependency>
     </dependencies>

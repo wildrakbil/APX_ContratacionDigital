@@ -14,9 +14,9 @@
   <packaging>pom</packaging>
   <name>LIBRARIES</name>
   <modules>
-    <module>QTDIR001</module>
-    <module>QTDIR001IMPL</module>
-    <module>QTDIR002</module>
-    <module>QTDIR002IMPL</module>
+    <module>QTDIRC01</module>
+    <module>QTDIRC01IMPL</module>
+    <module>QTDIRC02</module>
+    <module>QTDIRC02IMPL</module>
   </modules>
 </project>

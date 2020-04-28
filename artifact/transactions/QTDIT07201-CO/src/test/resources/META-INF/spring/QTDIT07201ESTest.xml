@@ -37,5 +37,5 @@
 		<prop key="XXX.password"/>
 	</util:properties>
 
-<bean class="com.bbva.qtdi.mock.QTDIR001Mock" id="qtdiR001"/>
+<bean class="com.bbva.qtdi.mock.QTDIRC01Mock" id="qtdiRC01"/>
 </beans>
