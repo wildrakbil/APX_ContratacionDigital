@@ -24,6 +24,9 @@
     <module>QTDIT07801-CO</module>
     <module>QTDIT07901-CO</module>
     <module>QTDIT08001-CO</module>
+    <module>QTDITC0101-CO</module>
+    <module>QTDITC0201-CO</module>
+    <module>QTDITC0301-CO</module>
     <module>QTDITC9001-CO</module>
     <module>QTDITC9101-CO</module>
     <module>QTDITC9201-CO</module>
@@ -34,8 +37,5 @@
     <module>QTDITC9701-CO</module>
     <module>QTDITC9801-CO</module>
     <module>QTDITC9901-CO</module>
-    <module>QTDITC0101-CO</module>
-    <module>QTDITC0201-CO</module>
-    <module>QTDITC0301-CO</module>
   </modules>
 </project>

@@ -1,13 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd   http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 		
-	<bean class="com.bbva.qtdi.QTDITC9201COTransaction" id="QTDITC9201COTransaction"/>
+	<bean id="QTDITC9201COTransaction" class="com.bbva.qtdi.QTDITC9201COTransaction" />
 
-	<bean class="com.bbva.elara.test.TestConfiguration" id="configurationArchitecture">
-		<property name="properties" ref="propertiesLoadedTest"/>
+	<bean id="configurationArchitecture" class="com.bbva.elara.test.TestConfiguration">
+		<property name="properties" ref="propertiesLoadedTest" />
 	</bean>
 
-	<bean class="org.springframework.beans.factory.config.PropertiesFactoryBean" id="propertiesLoadedTest">
+	<bean id="propertiesLoadedTest"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 		<property name="locations">
 			<list>
 				<value>classpath:/common-env.properties</value>	
@@ -17,25 +28,24 @@
 	</bean>	
 	
 	
-	<bean class="com.bbva.elara.test.osgi.DummyBundle" id="dummyBundle">
-		<constructor-arg type="java.lang.String" value="QTDITC92-01-CO"/>
+	<bean id="dummyBundle" class="com.bbva.elara.test.osgi.DummyBundle">
+		<constructor-arg type="java.lang.String" value="QTDITC92-01-CO" />
 	</bean>
 	
-	<bean class="com.bbva.elara.test.osgi.DummyTransactionFileDelegate" id="dummyTransactionFileDelegate">
+	<bean id="dummyTransactionFileDelegate" class="com.bbva.elara.test.osgi.DummyTransactionFileDelegate" >
 		<constructor-arg type="java.util.Properties" value="#{configurationArchitecture.getProperties()}"/>		
 	</bean>
 	
-	<bean class="com.bbva.elara.test.osgi.DummyBundleContext" id="dummyBundleContext">
-		<constructor-arg ref="dummyBundle" type="org.osgi.framework.Bundle"/>		
+	<bean id="dummyBundleContext" class="com.bbva.elara.test.osgi.DummyBundleContext">
+		<constructor-arg type="org.osgi.framework.Bundle" ref="dummyBundle" />		
 	</bean>
 	
 	<util:properties id="properties">
 		<!-- Example fields for database with logic name XXX -->
-		<prop key="XXX.url"/>
-		<prop key="XXX.driver"/>
-		<prop key="XXX.username"/>
-		<prop key="XXX.password"/>
+		<prop key="XXX.url"></prop>
+		<prop key="XXX.driver"></prop>
+		<prop key="XXX.username"></prop>
+		<prop key="XXX.password"></prop>
 	</util:properties>
 
-<bean class="com.bbva.qtdi.mock.QTDIRC02Mock" id="qtdiRC02"/>
 </beans>

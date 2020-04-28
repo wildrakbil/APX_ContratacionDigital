@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.bbva.qtdi</groupId>
@@ -8,7 +10,7 @@
   <groupId>com.bbva.qtdi</groupId>
   <artifactId>QTDITC91</artifactId>
   <version>01-CO</version>
-  <description>POST  authorization-questions</description>
+  <description>POST authorization-questions</description>
   <properties>
     <arc.osgi.version>0.0</arc.osgi.version>
   </properties>
@@ -55,12 +57,12 @@
       <artifactId>guava</artifactId>
       <scope>test</scope>
     </dependency>
-  <dependency>
-            <groupId>com.bbva.qtdi</groupId>
-            <artifactId>QTDIRC02</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-    </dependencies>
+    <dependency>
+      <groupId>com.bbva.qtdi</groupId>
+      <artifactId>QTDIRC02</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+  </dependencies>
   <build>
     <pluginManagement>
       <plugins>
@@ -81,7 +83,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore></ignore>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -162,7 +164,7 @@
             </goals>
             <configuration>
               <tasks>
-                <copy file="./target/${project.artifactId}-${project.version}.jar" todir="${outputDirectoryTransactions}"/>
+                <copy file="./target/${project.artifactId}-${project.version}.jar" todir="${outputDirectoryTransactions}" />
               </tasks>
             </configuration>
           </execution>

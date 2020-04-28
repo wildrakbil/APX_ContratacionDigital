@@ -7,11 +7,11 @@
 		<version>0.0.1</version>
 	</parent>
 	
-	<groupId>com.bbva.qtdi.employees.dto</groupId>
+	<groupId>com.bbva.qtdi.dto.employees</groupId>
 	<artifactId>QTDIC001</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-	<description>DTO's to manage a hiring process for work applicants.</description>
+	<description>Dto de employees</description>
 	
 	<dependencies>
         <dependency>
